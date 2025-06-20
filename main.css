@@ -92,7 +92,7 @@ a:active{
 .HEROPAGE{
    
     border-radius: 16px;
-    background-image: url('a1.jpg');
+    background-image: url('img1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ a:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('a1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('img1.jpg');
     position: relative;
     
 }
