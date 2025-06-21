@@ -20,11 +20,16 @@ nav {
     width: 100%;
     z-index: 999;   
   }
-#hrr{
-    margin: 5px 2vw;
-    color: #FF7124;
+  nav hr{
+  
+        border: none;
+        height: 2px;
+        background-color: #fe7f2d; 
+        margin: 5px 1.5vw;
+       
     
-}
+  }
+
 .navbar{
    
     display: flex;
@@ -39,7 +44,6 @@ nav {
 
 
 .home{
-    
     display: flex;
     gap: 5vh;
    
@@ -64,25 +68,16 @@ a:active{
 }
 @media (max-width: 768px){
     .navbar{
-        /* flex-direction: column; */
+      
         align-items: flex-start;
         height: auto;
     }
-    .logo{
-        font-size: 5vw;
-
-    }
     .home{
-        
-        gap: 3vh;
-        font-size: 1rem;
+        gap: 4vh;
         
     }
 .navbar a{
-  
     font-size: 1.5rem;
-   
-    
 }
    
 }
@@ -266,6 +261,8 @@ h6{
         flex-direction: column;
         height: auto;
         text-align: center;
+        min-height: auto;
+        padding-bottom: 50px;
     }
   .leftbox {
     width: 80%;
@@ -889,7 +886,7 @@ h6{
     justify-content: space-between;
     align-items: center;
     background-color: #eae6e0;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
 }
@@ -903,7 +900,7 @@ h6{
 .t5{
     position: absolute;
     font-family: 'New Title', serif;
-   font-size: 10vw;
+   font-size: 5vw;
    top: 25%;
    right: 5%;
 }
@@ -937,7 +934,9 @@ h6{
 }
 
 .CONNECT hr{
-    color: #192525;
+    border: none;
+    height: 2px;
+    background-color: #192525; 
 }
 #h5{
     color: #192525;
@@ -946,13 +945,14 @@ h6{
     bottom: 7%;
 }
 #hr1{
-   
+    color: #192525;
     position: absolute;
     width: 100vw;
     top: 5%;
 }
 
 #hr3{
+    color: #192525;
     position: absolute;
     width: 100vw;
     bottom: 15%;
@@ -1069,7 +1069,7 @@ h6{
         font-size: 3vw;
     }
     #hr1{
-        top: 2%;
+        top:2%;
     }
     #h5{
        bottom: 5%;
