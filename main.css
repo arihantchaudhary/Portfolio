@@ -7,7 +7,7 @@
 }
 body{
    margin:1.5%;
-   background-color: #282828;
+   background-color: #eae6e0;
 }
 html {
     scroll-behavior: smooth;
@@ -18,10 +18,10 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;  
+    z-index: 999;   
   }
 #hrr{
-    margin: 10px 2vw;
+    margin: 5px 2vw;
     color: #FF7124;
     
 }
@@ -37,142 +37,161 @@ nav {
    
 }
 
-.logo{
-    font-size: 1.5rem;
-}
 
 .home{
     
     display: flex;
     gap: 5vh;
-    font-size: 1.5rem;
+   
 }
 .navbar a{
     text-decoration: none;
-    padding: 6px 10px;
+    padding: 0px 0px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor:pointer;
-    color: #ffba00;
+    color: #1c1c1c;
     transition: background-color 0.3s, color 0.3s;
-    font-family: Bebas Neue;
+    font-family: 'New Title', serif;
+    font-size: 2rem;
 }
 .navbar a:hover{
-    background-color: #1c1c1c;
+    background-color: #b0a6df;
 }
 a:active{
     color: #B0A6DF;
 }
 @media (max-width: 768px){
     .navbar{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
         height: auto;
     }
     .logo{
-        font-size: 2rem;
+        font-size: 5vw;
+
     }
     .home{
-       
-        gap: 1vh;
+        
+        gap: 3vh;
         font-size: 1rem;
-        margin-top: 1px;
+        
     }
 .navbar a{
-    color: #b0a6df;
+  
     font-size: 1.5rem;
-    text-shadow: 1px 1px 2px #282828;
+   
     
 }
    
 }
 .HEROPAGE{
-   
-    border-radius: 16px;
-    background-image: url('img1.jpg');
+    background-color: #FFFFE3;  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('img1.jpg');
-    position: relative;
+    position: relative; 
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-image: url('img4.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('img4.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
+
 .HEROPAGE h1{
-    position: absolute;
-    color: #f9f6ef;
-    font-size: 12vh;
-    right: 7%;
-    font-weight: 800px;
-    writing-mode: vertical-rl; 
-    transform: rotate(360deg); 
-    font-family: "Rock 3D", system-ui;
-    z-index: 2;
-}
-.HEROPAGE h5{
-    position: absolute;
-    
+    position: absolute; 
     color: #B0A6DF;
-    font-size: 18vh;
-    right: 2%;
-    font-weight: 1000px;
-    writing-mode: vertical-rl; 
-    transform: rotate(360deg); 
-    font-family: Luckiest Guy;
+    font-size: 10vw;
+    font-weight: 100;
+    top: 2%;
+    left: 3%;
+    font-family: 'Panchang', sans-serif;
+    font-weight: 800;
     z-index: 1;
 }
 .HEROPAGE h2{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 50;
     position: absolute;
-    color: #f9f6ef;
+    color: #1c1c1c;
     font-size: 2vw;
     left: 4vw;
-    top: 33%;
+    top: 44%;
+}
+
+.HEROPAGE h3{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 50;
+    position: absolute;
+    color: #1c1c1c;
+    font-size: 4vw;
+    left: 3vw;
+    top: 48%;
 }
 .HEROPAGE h4{
     position: absolute;
-    color: #f9f6ef;
-    font-size: 3vw;
+    color: #282828;
+    font-size: 1.5em;
     left: 3vw;
-    top: 60%;
+    top: 73%;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 50;
 }
-.HEROPAGE h3{
-    position: absolute;
-    color: #f9f6ef;
-    font-size: 4vw;
-    left: 3vw;
-    top: 38%;
-}
-h6{
-    position: absolute;
-    color: #ffba00;
-    font-size: 2em;
-    left: 1vw;
-    bottom: 2vh;
-    z-index: 100000;
-}
+
 .HEROPAGE p{
     position: absolute;
-    color: #e6cfa7;
-    font-size: 2vw;
+    color: #282828;
+    font-size: 1.5rem;
     left: 3vw;
-    bottom: 30%;
+   top: 80%;
+   font-family: 'Clash Display', sans-serif;
+    font-weight: 50;
 }
 @media (max-width:768px){
     .HEROPAGE {
         background-size: cover;
         min-height: auto;          
     }
+    .HEROPAGE h1{
+        top: 25%;
+       font-size: 10vw;        
+    }
+    .HEROPAGE h2{
+        top: 50%;
+        font-size: 3vw;     
+    } 
+    .HEROPAGE h3{
+        top: 55%;
+        font-size: 5vw;     
+    }
+    .HEROPAGE h4{
+
+        font-size: 5vw;     
+    }
+    .HEROPAGE p{
+
+        font-size: 4vw;     
+    }
+    
+
+
+
+    
    
 }
  .ABOUT{
-    /* -webkit-user-select: none; 
-    -moz-user-select: none;   
-    -ms-user-select: none;    
-    user-select: none;  */
     margin-top: 10px;
     background-color:#eae6e0;
     display: flex;
@@ -182,12 +201,13 @@ h6{
     height: 100vh; 
     overflow: hidden;
     position: relative;
-    border-radius: 16px;
 }
 .leftbox{
-    height: 95vh;
+    height: 70vh;
     flex: 1;
-    display: flex;      
+    display: flex; 
+    left: 10%;
+    margin-left: 10%;  
 }
 .leftbox img{
     max-width: 100%;
@@ -195,7 +215,6 @@ h6{
     object-fit: cover;  
 }
 .rightbox{
-   
     flex: 1;
     display: flex;
     justify-content: center;
@@ -209,6 +228,7 @@ h6{
 }
 .t2 p1{
     font-size: 2em;
+    font-family: "Poiret One", sans-serif;
 }
 h6{
     position: absolute;
@@ -218,13 +238,26 @@ h6{
     bottom: 2vh;
 }
 .t0{
+    
     position: absolute;
-    top: 25%;
-    left: 36%;
+    top: 5%;
+    right: 23%;
+    font-size: 8vw; 
+    font-family: 'Melodrama', serif;
+    color: #193497;
+    font-weight: 500;
+    z-index: 2;
+}
+.t{
+    position: absolute;
+    top: 14%;
     font-size: 3vw;
     writing-mode: vertical-rl;
     transform: rotate(180deg); 
+    right: 18%;
+    font-family: 'Melodrama', serif;
     color: #193497;
+    font-weight: 500;
     z-index: 2;
 }
 
@@ -235,17 +268,23 @@ h6{
         text-align: center;
     }
   .leftbox {
-    width: 90vw;
+    width: 80%;
+    margin: 0px;
     height: auto;
     border-radius: 16px;
-  }
-  h6{
-    bottom: 0px;
-    font-size: 3rem;
+    margin-top: 20%;
   }
    .t0{
-    left: 90%;
-    font-size: 2rem;
+            top: 0%;
+            left: 0%;
+            font-size: 18vw;
+           
+   }
+   .t{
+    top: 3%;
+    right: 28%;
+    font-size: 8vw;
+  
    }
    .t2{
     font-size: 1rem;
@@ -256,8 +295,7 @@ h6{
 .RESUME{
     margin-top: 10px;
     height: 200vh;
-    background-color: #535366;
-    border-radius: 16px;
+    background-color: #faf0ca;
     display: flex;
     justify-content: center;
     position: relative;
@@ -266,23 +304,24 @@ h6{
 }
 .t3{
     flex: 1;
-    position: absolute;
-    top: 1%;
-    right: 5%;
-    font-family: Barrio;
+    position: absolute; 
+    right: 8%;
+    font-family: 'Melodrama', serif;
+    font-weight: 500;
     font-size: 13vw;
-    color: #ffba00;
+    color: #0d3b66;
 }
 .t3o{
     flex: 1;
     position: absolute;
-    top: 5%;
-    right: 1%;
+    top: 0%;
+    right: 3%;
     font-size: 4vw;
     writing-mode: vertical-rl; 
-    transform: rotate(360deg); 
-    font-family: Barrio;
-    color:#ffba00;
+    transform: rotate(180deg); 
+    font-family: 'Melodrama', serif;
+    font-weight: 300;
+    color: #0d3b66;
 }
 .skillbox{
     padding: 10px;
@@ -298,6 +337,7 @@ h6{
     width: 100%;
 
 }
+
 .cards{
    
     padding: 12px;
@@ -308,17 +348,17 @@ h6{
 .card1{
       display: flex;
       grid-area: edu; 
-      color: #b0a6df;
       position: relative;  
       flex: 1;
 }
 .card1 p{
     flex: 1;
-    top: 10%;
+    top: 20%;
     left: 3%;
     position: absolute;
-    font-size:5vw;
-    font-family: Bungee Shade;
+    font-family: 'Boxing', sans-serif;
+    font-size:4vw;
+    color: #fe7f2d;
 }
 .card1 #pre0{
     top: 50%;
@@ -332,9 +372,8 @@ h6{
     left: 3%;
     position: absolute;
     font-size:1vw;
-    font-family:  "Poiret One", sans-serif;
-    font-weight: bolder;
-    color: #eae6e0;
+    font-family: 'Author', serif;
+    color: #1c1c1c;
 }
 .card2{
   
@@ -349,30 +388,31 @@ h6{
 .download p{
     position: absolute;
     font-size: 5vw;
-    font-family: Bungee Shade;
+    font-family: 'Boxing', sans-serif;
     color: #ffba00;
     top: 5%;
 } .download p1{
     position: absolute;
     font-size: 2.5vw;
-    font-family: Barrio;
-    color: #eae6e0;
-    top: 40%;
+    font-family: 'Author', serif;
+    color: #1c1c1c;
+    top: 35%;
 } .download button{
     margin-top: 20px;
     appearance: none;
     border: none;
     border-radius: 4px;
-    background-color: #535366; 
+    background-color: #0d3b66; 
     box-shadow: -3.54px -3.53px 5px rgba(0,0,0,0.2), 
-     3.54px 3.53px 5px rgba(255,255,255,0.8);
+    3.54px 3.53px 5px rgba(255,255,255,0.8);
     cursor: pointer;
     transition: 0.1s ease;
     padding: 0.5em 1em;
     font-size: 1.3rem;
     position: absolute;
-    color: #b0a6df;
-    top: 60%;
+    color: #eae6e0;
+    font-family: 'Author', serif;
+    top: 40%;
     
 }
 .download button:active{
@@ -386,53 +426,54 @@ h6{
 }
 
 .card4{
-    background-color: #eae6e0;
+    background-color: #efe1d5;
     grid-area: dev; 
     position: relative;   
 }
 .card4 p{
     position: absolute;
-    top: 0%;
+    top: 5%;
     left: 0%;
-    font-family:Bungee Shade;
+    font-family: 'Boxing', sans-serif;
     font-size: 5vw;
-    color: #193497;
-   flex: 1;
+    color: #2e0d14;
+    flex: 1;
 }
 .card4 p1{
        
-        color: #193497;
+    color: #2e0d14;
         font-size: 2.5vw;
-        font-family:Barrio;    
+        font-family: 'New Title', serif;
+        font-weight: 700;
 }
 .card4 p2{
     
-        font-family: "Poiret One", sans-serif;
-        font-size: 1.5vw;
+        font-family: 'Author', serif;
+        font-size: 2rem;
 }
 .card4 p0{
     position: absolute;
-    top: 25%;
+    top: 28%;
 }
 .card4 p01{
     position: absolute;
-    top: 35%;
+    top: 40%;
 }
 .card4 p02{
     position: absolute;
-    top: 45%;
+    top: 50%;
 }
 .card4 p03{
     position: absolute;
-    top: 55%;
+    top: 60%;
 }
 .card4 p04{
     position: absolute;
-    top: 65%;
+    top: 70%;
 }
 .card4 p05{
     position: absolute;
-    top: 75%;
+    top: 80%;
 }
 
 .card5{
@@ -444,32 +485,40 @@ h6{
     position: absolute;
     top: 0%;
     left: 5%;
-    font-family:Bungee Shade;
+    font-family: 'Boxing', sans-serif;
     font-size: 5vw;
-    color: #e6cfa7;
+    color: #fe7f2d;
 }
 .card5 p1{
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 7%;
-    font-family:Barrio;
-    font-size: 3vw;
-    color: #f9f6ef;
+    font-family: 'New Title', serif;
+    font-weight: 800;
+    font-size: 4vw;
+    color: #1c1c1c;
 }
 .card5 p2{
     position: absolute;
-    top: 60%;
-    left: 9%;
-    font-family:Bebas Neue;
-    font-size: 1.5vw;
-    color: #f9f6ef;
+    top: 45%;
+    left: 7%;
+    font-family: 'New Title', serif;
+    font-weight: 800;
+    font-size: 4vw;
+    color: #1c1c1c;
+}
+.h5 p01,p02{
+    font-family: 'New Title', serif; 
+    font-weight: 200;
+    font-size: 2vw;
+    color: #1c1c1c;
 }
 .card6{
   
     grid-area: des; 
     flex: 1; 
     position: relative;
-    background-color: #3a4341; 
+    background-color: #f4f8f9; 
 }
 .h6{
     display: flex;
@@ -480,20 +529,21 @@ h6{
 }
 .h6 h1{
     position: absolute;
-    top: 5%;
+    top: 0%;
     left: 5%;
-    font-size: 2vw;
-    font-family:Bungee Shade;
-  color: #e6cfa7;
+    font-size: 3vw;
+    font-family: 'Boxing', sans-serif;
+  color:  #1c3934; 
 
 }
 .h6 p{
     position: absolute;
     top: 20%;
     padding: 2%;
-    font-size: 1.5vw;
+    font-size: 2rem;
     font-family: "Poiret One", sans-serif;
-    color: #e6cfa7;
+    font-weight: 400;
+    color:  #1c3934; 
     
   
 }
@@ -513,7 +563,7 @@ h6{
     position: absolute;
     top: 0%;
     left: 5%;
-    font-family:Bungee Shade;
+    font-family: 'Boxing', sans-serif;
     font-size: 4vw;
     color: #ffba00;
   
@@ -523,7 +573,7 @@ h6{
     width: 10vw;
     height: 10vh;
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
     left: 2%;
     font-family: Amatic SC;
   } 
@@ -548,19 +598,18 @@ h6{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     color: #eae6e0;
     border-radius: 10px;
     box-shadow: -3.54px -3.53px 5px rgba(0,0,0,0.2),  3.54px 3.53px 5px rgba(255,255,255,0.8);
   }
   
   .card-front {
-    background-color: #535366;
+   
     font-size: 2vw;
   }
   
   .card-back {
-    background-color:#535366;
+   
     color: #ffba00;
     font-size: 1vw;
     padding-left: 10px;
@@ -571,7 +620,7 @@ h6{
     width: 10vw;
     height: 10vh;
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
     left: 28%;
     font-family: Amatic SC;
   } 
@@ -602,12 +651,12 @@ h6{
   }
   
   .card-front {
-    background-color: #535366;
+   
     font-size: 2vw;
   }
   
   .card-back {
-    background-color:#535366;
+   
     color: #ffba00;
     font-size: 1vw;
     padding-left: 10px;
@@ -619,7 +668,7 @@ h6{
     width: 10vw;
     height: 10vh;
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
     left: 53%;
     font-family: Amatic SC;
   } 
@@ -650,13 +699,13 @@ h6{
   }
   
   .card-front {
-    background-color: #535366;
+   
     font-size: 2vw;
   }
   
   .card-back {
-    background-color:#535366;
-    color: #ffba00;
+   
+    color: #fe7f2d;
     font-size: 1vw;
     padding-left: 10px;
     transform: rotateY(180deg);
@@ -667,7 +716,7 @@ h6{
     width: 10vw;
     height: 10vh;
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
     left: 78%;
     font-family: Amatic SC;
   } 
@@ -699,12 +748,12 @@ h6{
   }
   
   .card-front {
-    background-color: #535366;
+    background-color: #0d3b66; 
     font-size: 2vw;
   }
   
   .card-back {
-    background-color:#535366;
+    background-color: #0d3b66; 
     color: #ffba00;
     font-size: 1vw;
     padding-left: 10px;
@@ -716,25 +765,27 @@ h6{
 }
 @media (max-width:786px){
     .download p{
-        top: 15%;
+        top: 5%;
     } .download p1{
-        top: 35%;
+        top: 18%;
         font-size: 5vw;
     } .download button{
-        top: 53%;
+        top: 28%;
+        font-size: 3vw;
     }
 
     .card4 p{
         top: 3%;
+        left: 3%;
     }
     .card4 p1{
-        font-size: 4vw;
+        font-size: 5vw;
     } .card4 p2{
         font-size: 3vw;
     }
     .card4 p0{
         position: absolute;
-        top: 15%;
+        top: 12%;
     }
     .card4 p01{
         position: absolute;
@@ -758,27 +809,44 @@ h6{
     }
     
     .card5 p{
-        top: 20%;
+        top:0%;
     }
     .card5 p1{
-        font-size: 5vw;
+        font-size: 8vw; 
+        top: 10%;   
     }
     .card5 p2{
-        font-size: 2.5vw;
+        font-size:8vw;
+        top: 23%;   
+    }
+    .card5 p01{
+        font-size: 5vw;    
+    }
+    .card5 p02{
+        font-size: 5vw;
     }
     .h6 h1{
-        font-size: 4vw;
+        font-size: 5vw;
+        top: 5%;
     }
     .h6 p{
-        top: 30%;
-        font-size: 2.5vw;
+        top: 25%;
+        font-size: 3.5vw;
+       padding: 0%;
         
     }
+ .card7 p{
+    top: 5%;
+    font-size: 5vw;
+ }
     .art-container,.music-container,.pet-container,.plant-container{
         width: 20vw;   
     }
-    .card-front,.card-back{
-        font-size: 2vw;
+    .card-front{
+        font-size: 5vw;
+    }
+    .card-back{
+        font-size: 2.5vw;
     }
     .music-container{
         top: 30%;
@@ -789,24 +857,30 @@ h6{
         left: 50%;
     }
     .plant-container{
-        top: 70%;
+        top: 65%;
         left: 2%;
     }
     .pet-container{
-        top: 70%;
+        top: 65%;
         left: 50%;
     }
   .h1 p{
-    top: 30%;
+    top: 40%;
   }  
  .card1 pre{
-       font-size: 2vw;
+       font-size: 3vw;
        right: -30%;
  }
  .card1 #pre0{
-    font-size: 2vw;
+    font-size: 3vw;
     right: -40%;
-    
+}
+.t3{
+    top: 3%;
+}  .t3o{
+    top: 4%;
+    right: 1%;
+    font-size: 5vw;
 }
 }
 .WORK{
@@ -817,79 +891,71 @@ h6{
     background-color: #eae6e0;
     height: 100vh;
     overflow: hidden;
-    border-radius: 16px;
     position: relative;
 }
 .t4{
     position: absolute;
-   font-family: Barrio;
+    font-family: 'Melodrama', serif;
    font-size: 12vw;
    top: 2%;
    left: 2%;
 }
 .t5{
     position: absolute;
-   font-family: "Rock 3D";
-   font-size: 30vw;
-   top: 20%;
-    right: 5%;
+    font-family: 'New Title', serif;
+   font-size: 10vw;
+   top: 25%;
+   right: 5%;
 }
 .CONNECT{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3a4341;
-    height: 100vh;
+    background-color: #cbdca8;
+    height: 80vh;
     overflow: hidden;
-    border-radius: 16px;
     position: relative;
 }
 .t6{
     position: absolute;
-   color: #e6cfa7;
-   font-size: 10vw;
-   top: 1%;
-   right: 5%;
+    color: #192525;
+    font-size: 10vw;
+    top: 0%;
+    right: 5%;
+    font-family: 'Melodrama', serif;
+    font-weight: 800;
 }
 .t6o{
     position: absolute;
-    color: #e6cfa7;
-    font-size: 4vw;
+    color: #192525;
+    font-size: 3vw;
     top: 11%;
     right: 0%;
     writing-mode: vertical-lr;
-    font-family: Amatic SC;
+    font-family: 'Melodrama', serif;
 }
 
 .CONNECT hr{
-    color: #ffba00;
+    color: #192525;
 }
 #h5{
-    color: #ffba00;
+    color: #192525;
     position: absolute;
     width: 100vw;
-    bottom: 7.7%;
+    bottom: 7%;
 }
 #hr1{
    
     position: absolute;
-    width: 92vw;
-    top: 17%;
+    width: 100vw;
+    top: 5%;
 }
-#hr2{
-  
-    position: absolute;
-    width: 94vh;
-    right: 12%;
-    top: 45%;
-    transform: rotate(90deg); 
-   
-}
+
 #hr3{
     position: absolute;
     width: 100vw;
-    bottom: 17%;
+    bottom: 15%;
 }
 .contact{
     flex: 1; 
@@ -897,16 +963,17 @@ h6{
     gap: 5vh;
     position: absolute;
     right: 2vw;
-    bottom: 11vh;
+    bottom: 7.5vh;
 
 }
 .contact a{
-    color: #e6cfa7;
+    color: #192525;
     text-decoration: none;
    font-size: 1.5rem;
 }
 .contact a:hover{
-    color: #fff44f;
+    color: #0d3b66;
+    
 }
 .msg,.t7,.t6o{
     -webkit-user-select: none; 
@@ -917,23 +984,25 @@ h6{
 .msg{
     flex: 1; 
     width: 20vw; 
-    height: 50vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 10vw;
-    color: #e6cfa7;
-    gap: 20vh;
+    top: 20%;
+    color: #192525;
+   
 }
 .msg form{
-    font-size: 2vw;
+    font-size: 1.5vw;
+    font-family: "Poiret One", sans-serif;
 }
 .msg input{
   margin-bottom: 2vh;
 }
 .underline-input {
     border: none;
-    border-bottom: 1px solid #e6cfa7;
+    border-bottom: 1px solid #192525;;
     outline: none;
     background: transparent;
     font-size: 1rem;
@@ -943,22 +1012,24 @@ h6{
     color: transparent;
   }
   .underline-input:hover::placeholder {
-    color: #B0A6DF;
+    color: #3d358b;
   }
   .underline-input:hover{
-    border-bottom: 1px solid #b0a6df;
+    border-bottom: 1px solid #3d358b;;
   }
   .boton{
     margin-top: 20px;
     appearance: none;
     border: 1px solid;
     border-radius: 4px;
-    background-color: #3a4341;
+    background-color: #192525;
     box-shadow: 2px 2px 0px black;
     cursor: pointer;
+    color: #e6cfa7;
     transition: 0.1s ease;
     padding: 0.5em 1em;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
+    font-family: "Poiret One", sans-serif;
   }
 .boton:active{
     box-shadow: -2px -2px 0px 2px black;
@@ -971,28 +1042,49 @@ h6{
 }
 .t7{
     position: absolute;
-    font-size: 2vw;
-    bottom: 1.8vh;
+    font-size: 1.5vw;
+    bottom: 0.5%;
     left: 35vw;
-    font-family: Luckiest Guy;
+    font-family: 'Ranade', sans-serif;
    
 }
 .t7 a{
     text-decoration: none;
-    color: #b0a6df;
+    color: #0d3b66;
 }
 @media (max-width:768px) {
+    .t6{
+        top: 5%;
+        right: 7%;
+    }
+    .t6o{
+        top: 7%;
+        font-size: 5vw;
+      
+    }
     .msg form{
         font-size: 3vw;
     }
-    #hr2{
-        right: -28vw;
+    .boton{
+        font-size: 3vw;
     }
     #hr1{
-        top: 10vh;
+        top: 2%;
     }
+    #h5{
+       bottom: 5%;
+    }
+    #hr3{
+        bottom: 13%;
+     }
+     .contact a{
+        font-size: 3vw;
+     }
+     .contact{
+        bottom: 8%;
+     }
    .t7{
-    left: 20%;
-    font-size: 4vw;
+    left: 25%;
+    font-size: 3vw;
    }
 }
